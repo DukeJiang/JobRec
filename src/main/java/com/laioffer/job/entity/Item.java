@@ -19,6 +19,18 @@ public class Item {
     private Set<String> keywords;
     private boolean favorite;
 
+    public Item(String id, String title, String location, String companyLogo,
+                String url, String description, Set<String> keywords, boolean favorite){
+        this.id = id;
+        this.title = title;
+        this.location = location;
+        this.companyLogo = companyLogo;
+        this.url = url;
+        this.description = description;
+        this.keywords = keywords;
+        this.favorite = favorite;
+    }
+
     @Override
     public String toString() {
         return "Item{" +
@@ -86,6 +98,8 @@ public class Item {
     public boolean getFavorite() {
         return favorite;
     }
+
+
 
     public void setFavorite(boolean favorite) {
         this.favorite = favorite;
